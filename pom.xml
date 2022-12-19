@@ -14,7 +14,7 @@
 	<name>voting-app</name>
 	<description>voting app</description>
 	<properties>
-		<java.version>8</java.version>
+		<java.version>16</java.version>
 	</properties>
 	<dependencies>
 
@@ -50,7 +50,6 @@
 	</dependencies>
 
 	<build>
-	<finalName>Voting-App</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -64,30 +63,6 @@
 					</excludes>
 				</configuration>
 			</plugin>
-			<plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <configuration>
-                <source>10</source>
-                <target>10</target>
-                <encoding>UTF-8</encoding>
-            </configuration>
-        </plugin>
-        <plugin>
-            <!-- Build an executable JAR -->
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-jar-plugin</artifactId>
-            <version>3.1.0</version>
-            <configuration>
-                <archive>
-                    <manifest>
-                        <addClasspath>true</addClasspath>
-                        <classpathPrefix>lib/</classpathPrefix>
-                        <mainClass>Main</mainClass>
-                    </manifest>
-                </archive>
-            </configuration>
-        </plugin>
 		</plugins>
 	</build>
 
