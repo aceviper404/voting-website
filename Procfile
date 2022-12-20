@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar target/voting-app-1.0.jar -Dserver.port=$PORT $JAR_OPTS
+web: java $JAVA_OPTS -jar target/voting-app-0.0.1-SNAPSHOT.jar -Dserver.port=$PORT $JAR_OPTS
