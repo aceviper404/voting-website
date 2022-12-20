@@ -1,1 +1,1 @@
-web: java -jar build/libs/your-project-name-version.jar 
+web: java -jar build/libs/voting-app-1.0.jar 
