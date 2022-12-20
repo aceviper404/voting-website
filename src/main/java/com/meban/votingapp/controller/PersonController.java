@@ -26,7 +26,7 @@ public class PersonController {
 	private IPAddressRepository iPAddressRepository;
 	
 	
-	@GetMapping("/")
+	@GetMapping("/start")
 	public ModelAndView addPersonForm(HttpServletRequest request) {
 		String ip = HttpUtils.getRequestIP(request);
 		//if ip exists
