@@ -1,7 +1,5 @@
 package com.meban.votingapp.entity;
 
-import org.springframework.beans.factory.annotation.Value;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
