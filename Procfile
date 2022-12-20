@@ -1,2 +1,1 @@
-web: java -jar build/libs/voting-app-1.0.jar 
---server.port=$PORT
+web: java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/*.war
