@@ -1,0 +1,1 @@
+web: java -jar build/libs/your-project-name-version.jar 
