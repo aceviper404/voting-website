@@ -33,26 +33,26 @@ public class PersonController {
 		
 		Optional<IPAddress> ipaddrobj = iPAddressRepository.findByAddress(ip);
 		
-		if(ipaddrobj.isPresent()) {
-			
-			//call "youve already submitted" page
-			
-			ModelAndView mav = new ModelAndView("youvealreadysubmitted");
-			Person person = new Person();
-			mav.addObject("person", person);
-			return mav;
-		}
-		else {
+//		if(ipaddrobj.isPresent()) {
+//			
+//			//call "youve already submitted" page
+//			
+//			ModelAndView mav = new ModelAndView("youvealreadysubmitted");
+//			Person person = new Person();
+//			mav.addObject("person", person);
+//			return mav;
+//		}
+//		else {
 			//store ip address
-			IPAddress new_ip = new IPAddress();
-			new_ip.setAddress(ip);
-			iPAddressRepository.save(new_ip);
+//			IPAddress new_ip = new IPAddress();
+//			new_ip.setAddress(ip);
+//			iPAddressRepository.save(new_ip);
 			
 			ModelAndView mav = new ModelAndView("startpage");
 			Person person = new Person();
 			mav.addObject("person", person);
 			return mav;
-		}
+		//}
 	}
 	
 	@GetMapping("/submitted")
