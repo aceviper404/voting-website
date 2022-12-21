@@ -71,7 +71,7 @@ public class PersonController {
 			//increment vote count
 			Person new_person = new Person();
 			new_person.setId(p.get().getId());
-			new_person.setName(p.get().getName());
+			new_person.setName(p.get().getName().toLowerCase());
 			new_person.setNumberOfVotes((short) (p.get().getNumberOfVotes()+1));
 			personRepository.save(new_person);
 		}else {
